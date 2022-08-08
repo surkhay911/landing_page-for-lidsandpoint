@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>самый крутой сайт для котика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <a href="#home"><li><img class="logo" src="img/vkusno.webp" alt=""></li></a>
+            <a href="#im"><li>обо мне</li></a>
+            <a href="#preim"><li>преимущества</li></a>
+            <a href="#work"><li>Этапы работы</li></a>
+            <a href="#price"><li>Стоимость услуг</li></a>
+            <a href="#connect"><li>оставить заявку</li></a>
+            <a href="#return"><li>связаться со мной</li></a>
+        </nav>
+    </header>
+    <main>
+        <div id="im" class="for_me">
+            <div>
+                <h2>Обо мне</h2>
+                <p>я родился в узбекистане</p>
+            </div>
+            <div>
+                <img src="img/boss.jpg" alt="">
+            </div>
+        </div>
+        <div id="preim">
+            <h2>преимущества</h2>
+            <p>я еврей</p>
+        </div>
+        <div id="work">
+            <h2>этапы работы</h2>
+            <p>скам скам скам</p>
+        </div>
+        <div id="price">
+            <h2>Стоимость</h2>
+            <p>300 bucks</p>
+        </div>
+        <div id="connect">
+            <h2>связаться со мной</h2>
+            <a href="moon322" target=»_blank»><img class="logo_soc" src="img/soc_site/mail.png" alt=""></a>
+            <a href="https://t.me/??" target=»_blank»><img class="logo_soc" src="img/soc_site/telegram.png" alt=""></a>
+            <a href="https://wa.me/??" target=»_blank»><img class="logo_soc" src="img/soc_site/whatsapp.png" alt=""></a>
+        </div>
+        <div id="return" class="form_return">
+            <div>
+                <h2>оставить заявку</h2>
+                <p>что ты сказал про мою маму?</p>
+            </div>
+            <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
+                <div class="form-zvonok"> 
+                  <div>
+                    <label>Имя <span>*</span></label>
+                    <input type='text' name='username' required></div>
+                  <div>
+                    <label>Номер телефона (с кодом) <span>*</span></label>
+                    <input type='text' name='usernumber' required></div>
+                  <div>
+                    <label>Сообщение</label>
+                    <input type='text' name='question'>
+                  </div>
+                  <input class="bot-send-mail" type='submit' value='Послать заявку'>
+                </div>
+                </form>
+        </div>
+    </main>
+</body>
+</html>
