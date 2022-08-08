@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>самый крутой сайт для котика</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body id="home">
     <header>
@@ -37,9 +38,28 @@
             <h2>этапы работы</h2>
             <p>скам скам скам</p>
         </div>
-        <div id="price">
-            <h2>Стоимость</h2>
-            <p>300 bucks</p>
+        <div id="price" class="price_list">
+            <div class="block_price">
+                <p>Разработка</p> 
+                <p class="price">59,99 $</p> 
+                <p>Направление сюда</p> 
+                <p>Отличная поддержка</p> 
+                <button>приобрести</button>
+            </div>
+            <div class="block_price">
+                <p>Разработка</p> 
+                <p>159,99 $</p> 
+                <p>Направление сюда</p> 
+                <p>Отличная поддержка</p> 
+                <button>приобрести</button>
+            </div>
+            <div class="block_price">
+                <p>Разработка</p> 
+                <p>259,99 $</p> 
+                <p>Направление сюда</p> 
+                <p>Отличная поддержка</p> 
+                <button>приобрести</button>
+            </div>
         </div>
         <div id="connect">
             <h2>связаться со мной</h2>
@@ -56,10 +76,16 @@
                 <div class="form-zvonok"> 
                   <div>
                     <label>Имя <span>*</span></label>
-                    <input type='text' name='username' required></div>
+                    <input type='text' name='username' required>
+                  </div>
                   <div>
-                    <label>Номер телефона (с кодом) <span>*</span></label>
-                    <input type='text' name='usernumber' required></div>
+                    <label>Номер телефона (+7 123 456 78 90) <span>*</span></label>
+                    <input type='text' name='usernumber' required>
+                  </div>
+                  <div>
+                    <label>Почта <span>*</span> </label>
+                    <input type='text' name='mail' required>
+                  </div>
                   <div>
                     <label>Сообщение</label>
                     <input type='text' name='question'>
