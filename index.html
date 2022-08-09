@@ -30,9 +30,36 @@
                 <img src="img/boss.jpg" alt="">
             </div>
         </div>
-        <div id="preim">
+        <div id="preim" class="preim">
             <h2>преимущества</h2>
-            <p>я еврей</p>
+            <div class="works_for_me">
+                <div class="about">
+                    <img src="img/icons/free-animated-icon-money-bag-6172509.gif" alt="">
+                    <p>1</p>
+                </div>
+                <div class="about">
+                    <img src="img/icons/free-animated-icon-idea-6172533.gif" alt="">
+                    <p>2</p>
+                </div>
+                <div class="about">
+                    <img src="img/icons/free-animated-icon-mouse-6172537.gif" alt="">
+                    <p>3</p>
+                </div>
+            </div>
+            <div class="works_for_me">
+                <div class="about">
+                    <img src="img/icons/free-animated-icon-briefcase-6172506.gif" alt="">
+                    <p>4</p>
+                </div>
+                <div class="about">
+                    <img src="img/icons/free-animated-icon-award-6172530.gif" alt="">
+                    <p>5</p>
+                </div>
+                <div class="about">
+                    <img src="img/icons/free-animated-icon-target-6172513.gif" alt="">
+                    <p>6</p>
+                </div>
+            </div>
         </div>
         <div id="work">
             <h2>этапы работы</h2>
@@ -70,30 +97,33 @@
         <div id="return" class="form_return">
             <div>
                 <h2>оставить заявку</h2>
-                <p>что ты сказал про мою маму?</p>
+                <!-- <p>что ты сказал про мою маму?</p> -->
             </div>
             <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
                 <div class="form-zvonok"> 
                   <div>
                     <label>Имя <span>*</span></label>
-                    <input type='text' name='username' required>
+                    <input type='text' name='username' required placeholder="Введите имя">
                   </div>
                   <div>
                     <label>Номер телефона (+7 123 456 78 90) <span>*</span></label>
-                    <input type='text' name='usernumber' required>
+                    <input type='text' name='usernumber' required placeholder="+7 (___) ___-__-__">
                   </div>
                   <div>
                     <label>Почта <span>*</span> </label>
-                    <input type='text' name='mail' required>
+                    <input type='text' name='mail' required placeholder="E-mail">
                   </div>
                   <div>
                     <label>Сообщение</label>
-                    <input type='text' name='question'>
+                    <textarea type='text' name='question'></textarea>
                   </div>
                   <input class="bot-send-mail" type='submit' value='Послать заявку'>
                 </div>
                 </form>
         </div>
     </main>
+    <footer>
+        <p>Copyright © 2022 Настройка рекламы в Яндекс Директ</p>
+    </footer>
 </body>
 </html>

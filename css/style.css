@@ -4,6 +4,10 @@
 #3AA6D0	
 #62B1D0 */
 
+*{
+	font-family: 'PT Sans Narrow', sans-serif;
+	/* font-family: 'Pacifico', cursive; */
+}
 
 
 nav{
@@ -65,6 +69,22 @@ main{
 }
 
 
+/* преимущества */
+
+.preim{
+	width: 80%;
+}
+
+.works_for_me{
+	display: flex;
+	justify-content: space-around;
+}
+
+.about>img{
+	width: 100px;
+	height: 100px;
+}
+
 /* блок стоимости */
 
 .price_list{
@@ -104,12 +124,16 @@ main{
 	background-color: black;
 }
 
+h2{
+	text-align: center;
+}
 
 /* обратная форма */
 
 
 .form_return{
     display: flex;
+	flex-direction: column;
 }
 
 .obratnuj-zvonok{
@@ -130,7 +154,7 @@ main{
 	box-sizing: border-box;
 	width: 100%;
 }
-.form-zvonok label,.form-zvonok input{
+.form-zvonok label,.form-zvonok input,textarea{
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
@@ -139,7 +163,7 @@ main{
 	margin-bottom: 5px;
 	font-weight: bold;
 }
-.form-zvonok input{
+.form-zvonok input,textarea{
 	padding: 10px 15px;
 	margin-top: 10px;
 }
@@ -162,4 +186,11 @@ main{
 .form-zvonok .bot-send-mail:hover{
 	color: #009b97;
 	background-color: #fff;
+}
+
+
+/* footer */
+
+footer>p{
+	text-align: center;
 }
