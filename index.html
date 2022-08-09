@@ -21,13 +21,57 @@
         </nav>
     </header>
     <main>
-        <div id="im" class="for_me">
+        <div class="first_page">
             <div>
-                <h2>Обо мне</h2>
-                <p>я родился в узбекистане</p>
+                <p class="first_page_text">СТАНЬ 
+                    АКУЛОЙ
+                    БИЗНЕСА </p>
+                    
+                  <p class="first_page_text">  ОБЕСПЕЧЬ СЕБЯ 
+                    ПОТОКОМ КЛИЕНТОВ</p>
             </div>
             <div>
-                <img src="img/boss.jpg" alt="">
+                <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
+                    <div class="form-zvonok"> 
+                      <div>
+                        <label>Имя <span>*</span></label>
+                        <input type='text' name='username' required placeholder="Введите имя">
+                      </div>
+                      <div>
+                        <label>Номер телефона (+7 123 456 78 90) <span>*</span></label>
+                        <input type='text' name='usernumber' required placeholder="+7 (___) ___-__-__">
+                      </div>
+                      <div>
+                        <label>Почта <span>*</span> </label>
+                        <input type='text' name='mail' required placeholder="E-mail">
+                      </div>
+                      <div>
+                        <label>Сообщение</label>
+                        <textarea type='text' name='question'></textarea>
+                      </div>
+                      <input class="bot-send-mail" type='submit' value='Послать заявку'>
+                    </div>
+                    </form>
+            </div>
+        </div>
+        <div id="im" class="for_me">
+            <div>
+                <h2>О компании</h2>
+                <p>С 2014 года наша компания разрабатывает, производит и 
+                    автоматизирует воронки продаж в области интернет-маркетинга. 
+                    Наши специалисты сотрудничают с десятками бизнесов, создали множество 
+                    разработок, механик и наработали свои схемы для повышения прибыли вашего
+                     бизнеса и уменьшения издержек. Команда опытных сотрудников компании 
+                     L-Digital внедрила совершенно новый подход к интернет-маркетингу, 
+                     основываясь на современных трендах. За 7 лет успешной работы мы привели 
+                     более 2 миллионов потенциальных клиентов в бизнес, с нами сотрудничали более 
+                     500 довольных заказчиков. Каждый проект мы доводим до нужных результатов. 
+                     В нашем штате 47 настоящих профессионалов своего дела с большим опытом 
+                     и наработанными знаниями.</p>
+            </div>
+            <div>
+                <!-- <img src="img/boss.jpg" alt=""> -->
+                <!-- <p>заглушка</p> -->
             </div>
         </div>
         <div id="preim" class="preim">
@@ -61,11 +105,30 @@
                 </div>
             </div>
         </div>
-        <div id="work">
-            <h2>этапы работы</h2>
-            <p>скам скам скам</p>
+        <div id="work" class="work">
+            <h2>наши услуги</h2>
+            <div class="works_for_me">
+                <div class="about">
+                    <img class="anim_icons" src="img/icons/free-animated-icon-award-6172530.gif" alt="">
+                    <p>что-то очень крутое</p>
+                </div>
+                <div class="about">
+                    <img class="anim_icons" src="img/icons/free-animated-icon-briefcase-6172506.gif" alt="">
+                    <p>что-то очень крутое</p>
+                </div>
+                <div class="about">
+                    <img class="anim_icons" src="img/icons/free-animated-icon-bar-chart-7211788.gif" alt="">
+                    <p>что-то очень крутое</p>
+                </div>
+                <div class="about">
+                    <img class="anim_icons" src="img/icons/free-animated-icon-idea-6172533.gif" alt="">
+                    <p>что-то очень крутое</p>
+                </div>
+            </div>
         </div>
+        <h2>Стоимость услуг</h2>
         <div id="price" class="price_list">
+
             <div class="block_price">
                 <p>Разработка</p> 
                 <p class="price">59,99 $</p> 
@@ -89,7 +152,7 @@
             </div>
         </div>
         <div id="connect">
-            <h2>связаться со мной</h2>
+            <h2>связаться с нами</h2>
             <a href="moon322" target=»_blank»><img class="logo_soc" src="img/soc_site/mail.png" alt=""></a>
             <a href="https://t.me/??" target=»_blank»><img class="logo_soc" src="img/soc_site/telegram.png" alt=""></a>
             <a href="https://wa.me/??" target=»_blank»><img class="logo_soc" src="img/soc_site/whatsapp.png" alt=""></a>

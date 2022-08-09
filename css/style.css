@@ -9,6 +9,11 @@
 	/* font-family: 'Pacifico', cursive; */
 }
 
+h2{
+	font-size: 50px;
+}
+
+
 
 nav{
     display: flex;
@@ -68,6 +73,24 @@ main{
 	/* opacity: 0; */
 }
 
+/* первая страница */
+
+.first_page{
+	display: flex;
+}
+
+.first_page_text{
+	font-size: 64px;
+}
+
+/* о компании */
+
+.for_me p {
+	font-size: 25px;
+	margin: 10px;
+	text-align: justify;
+
+}
 
 /* преимущества */
 
@@ -85,16 +108,24 @@ main{
 	height: 100px;
 }
 
+/* услуги */
+
+.work{
+	width: 80%;
+}
+
 /* блок стоимости */
 
 .price_list{
 	display: flex;
+	width: 60%;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 .block_price{
 	width: 200px;
-	height: 500px;
+	height: 230px;
 	/*color:#62B1D0;
 	*/background-color: #62B1D0;
 	margin: 10px;
@@ -112,6 +143,14 @@ main{
 	display: flex;
     align-items: center;
     justify-content: center;
+	height: 30px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.block_price button:hover{
+	color: blue;
+	background-color: aqua;
 }
 
 .block_price>p{
