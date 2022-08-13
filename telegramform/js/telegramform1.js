@@ -32,17 +32,17 @@
           message.text(successSendText).css("color", "#21d4bb");
           setTimeout(() => {
             message.text("");
-          }, 4000);
+          }, 10000);
         } else if (respond === "NOTVALID") {
           message.text(requiredFieldsText).css("color", "#d42121");
           setTimeout(() => {
             message.text("");
-          }, 3000);
+          }, 10000);
         } else {
           message.text(errorSendText).css("color", "#d42121");
           setTimeout(() => {
             message.text("");
-          }, 4000);
+          }, 10000);
         }
       }
     });

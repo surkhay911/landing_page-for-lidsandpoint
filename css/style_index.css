@@ -1,11 +1,11 @@
-/* #0776A0	 - осн
-#226078	
-#024C68	
-#3AA6D0	
-#62B1D0 */
+/* #ffffff	 - осн
+#999999
+#eeeeee
+#A65353
+ */
 
 *{
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'PT Mono', monospace;
 	/* font-family: 'Pacifico', cursive; */
 }
 
@@ -17,8 +17,9 @@ h2{
 
 nav{
     display: flex;
-    background-color: #226078	;
+    background-color: #eeeeee	;
     align-items: center;
+	justify-content: space-around;
     
 }
 
@@ -41,7 +42,7 @@ nav>a{
 main{
     display: flex;
     flex-direction: column;
-    background-color: #0776A0;
+    background-color: #ffffff;
     align-items: center;
 }
 
@@ -59,9 +60,11 @@ main{
 .for_me{
     display: flex;
 
+
 }
 
 .for_me>div>img{
+	margin: auto;
     width: 100px;
     height: 100px;
     margin: 10px;
@@ -70,6 +73,7 @@ main{
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
+
 	/* opacity: 0; */
 }
 
@@ -77,10 +81,16 @@ main{
 
 .first_page{
 	display: flex;
+	/* padding: 25px; */
+}
+
+.titul_text{
+	padding: 25px;
 }
 
 .first_page_text{
 	font-size: 64px;
+
 }
 
 /* о компании */
@@ -89,10 +99,48 @@ main{
 	font-size: 25px;
 	margin: 10px;
 	text-align: justify;
+	padding: 5px;
+}
 
+/* связаться с нами */
+
+.links_for_me{
+	display: flex;
+	justify-content: space-around;
 }
 
 /* преимущества */
+
+
+h3{
+	text-align: center;
+}
+
+.about{
+	width: 400px;
+	height: 260px;
+	/* background-color: #eeeeee; */
+	border: 8px double #999999;
+	margin: 10px;
+}
+
+.about:hover{
+	width: 400px;
+	height: 260px;
+	border: 8px double red;
+	margin: 10px;
+}
+
+.about img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about p{
+	text-align: center;
+}
 
 .preim{
 	width: 80%;
@@ -109,6 +157,32 @@ main{
 }
 
 /* услуги */
+
+.about1{
+	width: 400px;
+	height: 500px;
+	border: 8px double #999999;
+	margin: 10px;
+}
+
+.about1:hover{
+	width: 400px;
+	height: 500px;
+	border: 8px double red;
+	margin: 10px;
+}
+
+.about1 img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.about1 p{
+	text-align: center;
+}
 
 .work{
 	width: 80%;
@@ -127,7 +201,7 @@ main{
 	width: 200px;
 	height: 230px;
 	/*color:#62B1D0;
-	*/background-color: #62B1D0;
+	*/background-color: #eeeeee;
 	margin: 10px;
 	border-radius: 5%;
 	-webkit-border-radius: 5%;
@@ -136,22 +210,8 @@ main{
 	-o-border-radius: 5%;
 }
 
-.block_price button{
-	margin: 0 auto;
-	border: 0;
-	color: red;
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	height: 30px;
-	width: 200px;
-	cursor: pointer;
-}
 
-.block_price button:hover{
-	color: blue;
-	background-color: aqua;
-}
+
 
 .block_price>p{
 	text-align: center;
@@ -167,71 +227,17 @@ h2{
 	text-align: center;
 }
 
-/* обратная форма */
-
-
-.form_return{
-    display: flex;
-	flex-direction: column;
-}
-
-.obratnuj-zvonok{
-	width: 100%;
-	max-width: 350px;
-}
-.form-zvonok{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	padding: 0 20px;
-	box-sizing: border-box;
-}
-.form-zvonok div{
-	padding: 15px 0;
-}
-.bot-send-mail{
-	box-sizing: border-box;
-	width: 100%;
-}
-.form-zvonok label,.form-zvonok input,textarea{
-	display: block;
-	width: 100%;
-	box-sizing: border-box;
-}
-.form-zvonok label{
-	margin-bottom: 5px;
-	font-weight: bold;
-}
-.form-zvonok input,textarea{
-	padding: 10px 15px;
-	margin-top: 10px;
-}
-.form-zvonok label span{
-	color: red;
-}
-.form-zvonok .bot-send-mail{
-	padding: 15px;
-	margin-top: 10px;
-	background: none;
-	border: none;
-	text-transform: uppercase;
-	color: #fff;
-	font-weight: bold;
-	background-color: #009b97;
-	cursor: pointer;
-	border: 3px #009b97 solid;
-	border-radius: 5px;
-}
-.form-zvonok .bot-send-mail:hover{
-	color: #009b97;
-	background-color: #fff;
-}
 
 
 /* footer */
 
 footer>p{
 	text-align: center;
+}
+
+footer{
+	background-color: #999999;
+	height: 25px;
 }
 
 
