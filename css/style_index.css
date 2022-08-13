@@ -233,3 +233,47 @@ h2{
 footer>p{
 	text-align: center;
 }
+
+
+
+/* адаптивность */
+
+@media all and (max-width:1200px) {
+	body{
+		/* width: 50%; */
+	}
+	nav{
+		flex-direction: column;
+	}
+	.first_page{
+		flex-direction: column;
+	}
+	.works_for_me{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.price_list{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.connect{
+		/* display: flex; */
+		/* flex-direction: column; */
+		/* justify-content: center; */
+		/* align-items: center; */
+	}
+	h2{
+		font-size: 16px;
+	}
+	.for_me p{
+		font-size: 16px;
+	}
+
+	.first_page_text{
+		font-size: 16px;
+	}
+
+}
+
