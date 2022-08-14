@@ -10,15 +10,16 @@ body {
 
 .form-wrapper {
   width: 100%;
-  padding: 50px;
+  padding: calc(25px + (50 - 25) * ((100vw - 320px) / (1440 - 320)));
   display: flex;
   align-items: center;
   justify-content: center; }
 
 .contact-form {
   width: 100%;
-  max-width: 460px;
-  padding: 60px;
+  /* max-width: 460px; */
+  width: calc(230px + (460 - 230) * ((100vw - 320px) / (1440 - 320)));
+  padding: calc(30px + (60 - 30) * ((100vw - 320px) / (1440 - 320)));
   background: #1c1e21;
   border-radius: 10px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); }
@@ -27,7 +28,7 @@ body {
     line-height: 1.5;
     text-align: center;
     color: #fff1c6;
-    font-size: 18px;
+    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1440 - 320)));
     margin: 0 0 30px; }
   .contact-form__message {
     text-align: center; }
@@ -38,11 +39,12 @@ body {
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/icons_form/name.png") center left 15px no-repeat, #1c1e21;
+    /* background: url("/img/icons_form/name.svg") center left 15px no-repeat, #1c1e21; */
+    background-color: #1c1e21;
     background-size: 30px;
     margin-bottom: 20px;
-    padding: 0 15px 0 59px;
-    font: 16px "Roboto", sans-serif;
+    padding: 0 15px 0 15px;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
     color: #fff;
     transition: 0.3s; }
     .contact-form__input_name:focus {
@@ -55,11 +57,12 @@ body {
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/icons_form/text.png") center left 15px no-repeat, #1c1e21;
+    /* background: url("/img/icons_form/text.png") center left 15px no-repeat, #1c1e21; */
+    background-color: #1c1e21;
     background-size: 30px;
     margin-bottom: 20px;
-    padding: 0 15px 0 59px;
-    font: 16px "Roboto", sans-serif;
+    padding: 0 15px 0 15px;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
     color: #fff;
     transition: 0.3s; }
     .contact-form__input_text:focus {
@@ -72,11 +75,12 @@ body {
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/icons_form/mail.png") center left 15px no-repeat, #1c1e21;
+    /* background: url("/img/icons_form/mail.png") center left 15px no-repeat, #1c1e21; */
+    background-color: #1c1e21;
     background-size: 30px;
     margin-bottom: 20px;
-    padding: 0 15px 0 59px;
-    font: 16px "Roboto", sans-serif;
+    padding: 0 15px 0 15px;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
     color: #fff;
     transition: 0.3s; }
     .contact-form__input_mail:focus {
@@ -89,11 +93,12 @@ body {
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/icons_form/number.png") center left 15px no-repeat, #1c1e21;
+    /* background: url("/img/icons_form/number.png") center left 15px no-repeat, #1c1e21; */
+    background-color: #1c1e21;
     background-size: 30px;
     margin-bottom: 20px;
-    padding: 0 15px 0 59px;
-    font: 16px "Roboto", sans-serif;
+    padding: 0 15px 0 15px;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
     color: #fff;
     transition: 0.3s; }
     .contact-form__input_phone:focus {
@@ -108,11 +113,12 @@ body {
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/file.svg") center left 15px no-repeat, #1c1e21;
+    /* background: url("/img/file.svg") center left 15px no-repeat, #1c1e21; */
+    background-color: #1c1e21;
     background-size: 30px;
     margin-bottom: 20px;
     padding: 0 15px 0 59px;
-    font: 16px "Roboto", sans-serif;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
     color: #757575;
     cursor: pointer; }
   .contact-form__button {
@@ -126,7 +132,7 @@ body {
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
-    font: 16px "Roboto", sans-serif;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
     transition: 0.3s;
     cursor: pointer; }
     .contact-form__button:hover {
@@ -197,7 +203,7 @@ body {
 /* адаптация */
       @media all and (max-width:1200px) {
         .contact-form {
-          max-width: 300px;
+          /* max-width: 300px; */
           /* padding: 50px; */}
       }    
 /*# sourceMappingURL=style.css.map */
