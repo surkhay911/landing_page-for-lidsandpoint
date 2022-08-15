@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.documentElement.scrollTop > 1) {//количество пикселей после которой появится кнопка
+    if (document.documentElement.scrollTop > 200) {//количество пикселей после которой появится кнопка
         document.getElementById("myBtn").style.display = "block";
         console.log('1');
     } else {

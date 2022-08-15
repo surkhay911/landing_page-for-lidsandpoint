@@ -133,7 +133,7 @@ h3{
 .about:hover{
 	width: calc(200px + (400 - 200) * ((100vw - 320px) / (1440 - 320)));
 	height: calc(160px + (260 - 160) * ((100vw - 320px) / (1440 - 320)));
-	border: 8px double red;
+	border: 8px double #533fb7;
 	margin: 10px;
 }
 
@@ -180,7 +180,7 @@ h3{
 .about1:hover{
 	width: calc(200px + (400 - 200) * ((100vw - 320px) / (1440 - 320)));
 	height: calc(250px + (500 - 250) * ((100vw - 320px) / (1440 - 320)));
-	border: 8px double red;
+	border: 8px double #533fb7;
 	margin: 10px;
 }
 
@@ -378,5 +378,5 @@ footer>p{
   }
   
   #myBtn:hover {
-    background-color: red;
+    background-color: #533fb7;
   }
