@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>самый крутой сайт для котика</title>
+    <title>Лиды и точка</title>
     <link rel="stylesheet" href="css/style_index.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/style_form.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body id="home">
     <button onclick="topFunction()" id="myBtn">↑</button>
     <script src="js/script_button_up.js"></script>
     <header>
         <nav>
-            <a href="#home"><li><img class="logo" src="img/logo.png" alt=""></li></a>
-            <a href="#im"><li>О компании</li></a>
-            <a href="#preim"><li>Преимущества</li></a>
-            <a href="#work"><li>Наши услуги</li></a>
-            <a href="#price1"><li>Стоимость услуг</li></a>
-            <a href="#connect"><li>Связаться с нами</li></a>
-            <a href="#return"><li>Оставить заявку</li></a>
+            <a href="#home"><img class="logo" src="img/logo.png" alt=""></a>
+            <a href="#im">О компании</a>
+            <a href="#preim">Преимущества</a>
+            <a href="#work">Наши услуги</a>
+            <a href="#price1">Стоимость услуг</a>
+            <a href="#connect">Связаться с нами</a>
+            <a href="#return">Оставить заявку</a>
         </nav>
     </header>
     <main>
@@ -42,18 +43,18 @@
                   <!-- Поле с именем -->
                   <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
                     <input name="name" type="text" class="contact-form__input contact-form__input_name"
-                           placeholder="Введите ваше имя*" oninput="this.value=this.value.replace(/[^а-яА-Я][^a-zA-Z]/g,'');">
+                           placeholder="Введите ваше имя*" oninput="this.value=this.value.replace(/[^а-яА-Я- ][^a-zA-Z- ]/g,'');">
                   </div>
             
                   <!-- Поле с телефоном -->
                   <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
                     <input name="phone" type="tel" class="contact-form__input contact-form__input_phone"
-                           placeholder="Введите ваш телефон*">
+                           placeholder="Введите ваш телефон*" maxlength="16" minlength="16">
                   </div>
             
                   <!-- почта -->
                   <div class="contact-form__input-wrapper contact-form__input-wrapper_mail">
-                    <input name="mail" type="text" class="contact-form__input contact-form__input_mail"
+                    <input name="mail" type="email" class="contact-form__input contact-form__input_mail"
                            placeholder="Введите вашу почту*">
                   </div>
             
@@ -94,12 +95,12 @@
                 <div class="about">
                     <img class="anim_icons" src="img/icons/поиск.gif" alt="">
                     <h3>Аудит вашего сайта</h3>
-                    <p>Перед началом работы проведу аудит вашего сайта на предмет ошибок и доработок.</p>
+                    <p>Перед началом работы наша команда проведет аудит вашего сайта на предмет ошибок и доработок.</p>
                 </div>
                 <div class="about">
                     <img class="anim_icons" src="img/icons/посредник.gif" alt="">
                     <h3>Без посредников</h3>
-                    <p>Всю работу и поддержку клиента выполняю я. В работе не участвуют третьи лица.</p>
+                    <p>Всю работу и поддержку клиента выполняет наша команда. В работе не участвуют третьи лица.</p>
                 </div>
                 <div class="about">
                     <img class="anim_icons" src="img/icons/выгода.gif" alt="">
@@ -109,7 +110,7 @@
             </div>
             <div class="works_for_me">
                 <div class="about">
-                    <img class="anim_icons" src="img/icons/free-animated-icon-briefcase-6172506.gif" alt="">
+                    <img class="anim_icons" src="img/icons/опыт.gif" alt="">
                     <h3>Опыт работы более 5 лет</h3>
                     <p>За это время я настраивал рекламу для разных сфер бизнеса. Найду индивидуальный подход для любого проекта.</p> 
                 </div>
@@ -138,7 +139,7 @@
                         от города</p>
                 </div>
                 <div class="about1">
-                    <img class="anim_icons" src="img/icons/сайт.gif" alt="">
+                    <img class="anim_icons" src="img/icons/программист.gif" alt="">
                     <h3>Разработка сайтoв</h3>
                     <p>Наши разработчики помогут продвинуть ваш бизнес на
                         новый уровень с помощью создания уникального сайта. Мы учтем все ваши требования, и
@@ -185,14 +186,16 @@
                     <h3>Настройка контекстной  рекламы в Yandex</h3>
                     <p class="new_price">25 000  ₽</p> 
                 </div>
-                <li>Установка и настройка Яндекс.Метрики.</li>
-                <li>Изучение ниши</li>
-                <li>Аудит сайта клиента.</li>
-                <li>Сбор ключевых фраз для показа рекламы.</li>
-                <li>Подготовка рекламных материалов</li>
-                <li>Настройка рекламной кампании в Яндекс.Директ.</li>
-                <li>Прохождение модерации.</li>
-                <li>Запуск кампании в Яндекс.Директ.</li>
+                <ol>
+                    <li>Установка и настройка Яндекс.Метрики.</li>
+                    <li>Изучение ниши</li>
+                    <li>Аудит сайта клиента.</li>
+                    <li>Сбор ключевых фраз для показа рекламы.</li>
+                    <li>Подготовка рекламных материалов</li>
+                    <li>Настройка рекламной кампании в Яндекс.Директ.</li>
+                    <li>Прохождение модерации.</li>
+                    <li>Запуск кампании в Яндекс.Директ.</li>
+                </ol>
                 <!-- <button>приобрести</button> -->
             </div>
             <div class="block_price">
@@ -200,8 +203,10 @@
                     <h3>Разработка сайта</h3>
                     <p class="new_price"> от 30 000 ₽ до 150 000 ₽</p> 
                 </div>
-                <li>landing page</li>
-                <li>сайт-визитка</li>
+                <ol>
+                    <li>landing page</li>
+                    <li>сайт-визитка</li>
+                </ol>
                 <!-- <button>приобрести</button> -->
             </div>
             <div class="block_price">
@@ -209,11 +214,13 @@
                     <h3>Таргетированная реклама в социальных сетях</h3>
                     <p class="new_price">10 000 ₽</p> 
                 </div>
-                <li>Анализ конкурентов.</li>
-                <li>Определите ЦА. </li>
-                <li>Подготовка визуала и уникального торгового предложения. </li>
-                <li>Точечная настройка. </li>
-                <li>Тест готовой РК</li>
+                <ol>
+                    <li>Анализ конкурентов.</li>
+                    <li>Определите ЦА. </li>
+                    <li>Подготовка визуала и уникального торгового предложения. </li>
+                    <li>Точечная настройка. </li>
+                    <li>Тест готовой РК</li>
+                </ol>
                 <!-- <button>приобрести</button> -->
             </div>
             <div class="block_price">
@@ -221,13 +228,15 @@
                     <h3>SEO-оптимизация</h3>
                     <p class="new_price">15 000 ₽</p> 
                 </div>
-                <li>Анализ, стратегия, план работ и прогноз результатов</li>
-                <li>Cписок поисковых запросов</li>
-                <li>Техническая подготовка</li>
-                <li>Оптимизация контента на сайте</li>
-                <li>Внешняя оптимизация</li>
-                <li>Улучшение сайта для удобства пользователей</li>
-                <li>Отчет, выводы, планы</li> 
+                <ol>
+                    <li>Анализ, стратегия, план работ и прогноз результатов</li>
+                    <li>Cписок поисковых запросов</li>
+                    <li>Техническая подготовка</li>
+                    <li>Оптимизация контента на сайте</li>
+                    <li>Внешняя оптимизация</li>
+                    <li>Улучшение сайта для удобства пользователей</li>
+                    <li>Отчет, выводы, планы</li> 
+                </ol>
                 <!-- <button>приобрести</button> -->
             </div>
             <div class="block_price">
@@ -235,21 +244,23 @@
                     <h3>Ведение рекламной компании</h3>
                     <p class="new_price">8 000 ₽</p> 
                 </div>
-                <li>аудит действующей РК</li> 
-                <li>улучшение рекламных объявлений</li> 
-                <li>расширение семантического ядра</li> 
-                <li>создание новых объявлений</li> 
-                <li>отчет о проделанной работе</li> 
+                <ol>
+                    <li>аудит действующей РК</li> 
+                    <li>улучшение рекламных объявлений</li> 
+                    <li>расширение семантического ядра</li> 
+                    <li>создание новых объявлений</li> 
+                    <li>отчет о проделанной работе</li> 
+                </ol>
                 <!-- <button>приобрести</button> -->
             </div>
         </div>
         <div id="connect" class="connect">
             <h2>Связаться с нами</h2>
             <div class="links_for_me">
-                <a href="mailto:moon322@yandex.ru" target=»_blank»><img class="logo_soc" src="img/soc_site/mail.png" alt=""></a>
+                <a href="mailto:info@leadsandpoint.ru" target=»_blank»><img class="logo_soc" src="img/soc_site/mail.png" alt=""></a>
                 <a href="https://t.me/??" target=»_blank»><img class="logo_soc" src="img/soc_site/teleg.png" alt=""></a>
                 <a href="https://wa.me/??" target=»_blank»><img class="logo_soc" src="img/soc_site/whatsapp.png" alt=""></a>
-                <a href="tel:89991234567" target=»_blank»><img class="logo_soc" src="img/soc_site/telefon.png" alt=""></a>
+                <a href="tel:89111298219" target=»_blank»><img class="logo_soc" src="img/soc_site/telefon.png" alt=""></a>
             </div>
         </div>
         <div id="return" class="form_return">
@@ -265,18 +276,18 @@
                       <!-- Поле с именем -->
                       <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
                         <input name="name1" type="text" class="contact-form__input contact-form__input_name"
-                               placeholder="Введите ваше имя*" oninput="this.value=this.value.replace(/[^а-яА-Я][^a-zA-Z]/g,'');">
+                               placeholder="Введите ваше имя*" oninput="this.value=this.value.replace(/[^а-яА-Я- ][^a-zA-Z- ]/g,'');">
                       </div>
                 
                       <!-- Поле с телефоном -->
                       <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
                         <input name="phone1" type="tel" class="contact-form__input contact-form__input_phone"
-                               placeholder="Введите ваш телефон*">
+                               placeholder="Введите ваш телефон*" maxlength="16" minlength="16">
                       </div>
                 
                       <!-- почта -->
                       <div class="contact-form__input-wrapper contact-form__input-wrapper_mail">
-                        <input name="mail1" type="text" class="contact-form__input contact-form__input_mail"
+                        <input name="mail1" type="email" class="contact-form__input contact-form__input_mail"
                                placeholder="Введите вашу почту*">
                       </div>
                 
@@ -301,8 +312,8 @@
     </main>
     <footer>
         <div class="footer_contact">
-            <a href="mailto:moon322@yandex.ru" target=»_blank»>Почта:info@yandex.ru</a>
-            <a href="tel:89991234567" target=»_blank»>Телефон:8900-000-00-00</a>
+            <a href="mailto:info@leadsandpoint.ru" target=»_blank»>Почта:info@leadsandpoint.ru</a>
+            <a href="tel:89111298219" target=»_blank»>Телефон:8911-129-82-19</a>
         </div>
         <!-- <p>Copyright © 2022 Настройка рекламы в Яндекс Директ</p> -->
         <!-- <a class="telefon" href="tel:+79991234567">+7 (999)</span> 123-45-67</a> -->
@@ -313,14 +324,15 @@
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
  
-    ym(89944140, "init", {
+    ym(89970660, "init", {
          clickmap:true,
          trackLinks:true,
          accurateTrackBounce:true,
          webvisor:true
     });
-    </script>
-     <noscript><div><img src="https://mc.yandex.ru/watch/89944140" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+     </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/89970660" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
  <!-- /Yandex.Metrika counter -->
 </body>
 </html>

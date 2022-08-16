@@ -28,7 +28,7 @@ nav{
     font-size: calc(5px + (15 - 5) * ((100vw - 320px) / (1440 - 320)));
 }
 
-nav>a>li{
+nav>a{
     list-style-type: none;
     margin: calc(5px + (10 - 5) * ((100vw - 320px) / (1440 - 320)));;
     color: black;
@@ -232,12 +232,16 @@ h3{
 	-o-border-radius: 15px;
 }
 
-.block_price > li{
+.block_price > ol > li{
 	text-decoration: none;
 	list-style-type:"\1F525";
 	padding: calc(2.5px + (5 - 2.5) * ((100vw - 320px) / (1440 - 320)));
 	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
 	/* color: red; */
+}
+
+.block_price > ol{
+	padding-left: 25px;
 }
 
 
